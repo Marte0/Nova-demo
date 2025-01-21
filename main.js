@@ -40,6 +40,10 @@ let nuclearDoneInvestmens = [];
 let approvalleDoneInvestmens = [];
 let gridDoneInvestmens = [];
 
+//tutorial
+const tutorialScreens = document.querySelectorAll(".tutorial");
+const lastTutorialButton = document.querySelector(".last-tutorial-button");
+
 //time e score
 const timeText = document.querySelector(".time");
 let time = 120; // 2 minutes in seconds
@@ -50,8 +54,7 @@ const scoreText = document.querySelector(".score");
 //aumento score messo nel feedback stamp
 let score = 0;
 const scoreScreen = document.querySelector(".score-screen");
-
-startTimer();
+const finalScoreText = document.querySelector(".final-score");
 
 //variabili carte
 
@@ -119,6 +122,21 @@ riempiCarteEsterne();
 
 //rimuovi carta fossili perche è troppo difficile
 cards[1].style.display = "none";
+
+//tutorial e inizio gioco
+tutorialScreens.forEach((screen, index) => {
+  screen.addEventListener("click", () => {
+    console.log(index);
+    if (index != 2) {
+      screen.style.display = "none";
+    }
+  });
+});
+
+lastTutorialButton.addEventListener("click", () => {
+  tutorialScreens[2].style.display = "none";
+  startTimer();
+});
 
 //gestione event listener investimenti
 
@@ -543,6 +561,8 @@ function startTimer() {
     if (time <= 0) {
       clearInterval(timerInterval);
       scoreScreen.style.display = "flex";
+      score = 123;
+      finalScoreText.innerHTML = score;
     } else {
       time--;
     }

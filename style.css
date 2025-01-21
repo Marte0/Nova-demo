@@ -26,11 +26,33 @@ body {
   z-index: 1000;
 }
 
+.tutorial {
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fa6b67;
+  z-index: 1000;
+}
+.tutorial1 {
+  z-index: 1003;
+}
+.tutorial2 {
+  z-index: 1002;
+}
+.tutorial3 {
+  z-index: 1001;
+}
+
 .score-time {
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
-  top: 0%;
+  top: 0px;
   display: flex;
   width: 80vw;
   max-width: 350px;

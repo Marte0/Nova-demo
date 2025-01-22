@@ -25,6 +25,15 @@ body {
   background-color: #cc7d39;
   z-index: 1000;
 }
+.score-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-over {
+  position: absolute;
+  top: 10%;
+}
 
 .tutorial {
   position: fixed;
@@ -657,6 +666,12 @@ input:checked + .slider:before {
   font-weight: 400;
   line-height: 100%;
 }
+.game-over-text {
+  color: #ecd2bb;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 100%;
+}
 
 .bold {
   font-weight: 600;
@@ -669,5 +684,5 @@ input:checked + .slider:before {
   text-transform: uppercase;
   font-size: 0.6875rem;
   font-weight: 500;
-  color: #8c8a88;
+  color: #ecd2bb;
 }

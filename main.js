@@ -1,6 +1,7 @@
 //variabili generiche
 let shownInvestmentData;
 const feedbackStamp = document.querySelector(".feedback-stamp");
+// miao
 
 //investimenti correnti
 let renewablesCurrentInvestment = Math.floor(Math.random() * investmentData.renewables.length);

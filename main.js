@@ -8,7 +8,7 @@ let fossilCurrentInvestment = Math.floor(Math.random() * investmentData.fossil.l
 let nuclearCurrentInvestment = Math.floor(Math.random() * investmentData.nuclear.length);
 let approvalCurrentInvestment = Math.floor(Math.random() * investmentData.approval.length);
 let gridCurrentInvestment = Math.floor(Math.random() * investmentData.grid.length);
-
+//commento prva push
 //investimenti non fatti
 let renewableUndoneInvestmens = {
   undone: [],

@@ -600,7 +600,7 @@ const investmentData = {
         consenso: 10,
       },
       titolo: "Digital Platforms for Energy Literacy",
-      archetipo: "energy_influencer",
+      archetipo: "energyInfluencer",
 
       media: [
         {
@@ -625,7 +625,7 @@ const investmentData = {
         consenso: 10000,
       },
       titolo: "Expanding The General Knowledge",
-      archetipo: "curious_learner",
+      archetipo: "curiousLearner",
 
       media: [
         {
@@ -650,7 +650,7 @@ const investmentData = {
         consenso: 10000,
       },
       titolo: "Empowering Collective Action",
-      archetipo: "passive_observer",
+      archetipo: "passiveObserver",
 
       media: [
         {
@@ -675,7 +675,7 @@ const investmentData = {
         consenso: 10000,
       },
       titolo: "Investing in Next Voters ",
-      archetipo: "innovation_enthusiast",
+      archetipo: "innovationEnthusiast",
 
       media: [
         {

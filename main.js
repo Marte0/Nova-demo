@@ -344,6 +344,7 @@ cards.forEach((card, index) => {
         investmentBodies[2].style.display = "flex";
 
         //aggiorna testo bottoni nucleare
+        nuclearCode.src = `nuclear_codes/${investmentData.nuclear[nuclearCurrentInvestment].code}.png`;
         nuclearButtons.forEach((button, index) => {
           button.innerHTML = investmentData.nuclear[nuclearCurrentInvestment].opzioni[index].abbreviazione;
         });
@@ -369,7 +370,7 @@ cards.forEach((card, index) => {
         });
 
         gridScientistText.forEach((scientistText, index) => {
-          scientistText.innerHTML = investmentData.grid[gridCurrentInvestment].opzioni[index].frase;
+          scientistText.innerHTML = `"` + investmentData.grid[gridCurrentInvestment].opzioni[index].frase + `"`;
         });
       }
 

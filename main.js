@@ -562,7 +562,6 @@ function startTimer() {
     if (time <= 0) {
       clearInterval(timerInterval);
       scoreScreen.style.display = "flex";
-      score = 123;
       finalScoreText.innerHTML = score;
     } else {
       time--;
